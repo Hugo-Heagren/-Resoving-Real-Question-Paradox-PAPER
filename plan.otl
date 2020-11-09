@@ -1,0 +1,78 @@
+In (cite) Wasserman and Whitcombe suggest two ways of combatting the so called 'real paradox of the question'.
+The real paradox of the question:
+
+1 There are some best questions
+2 Q5 either is or is not one of the best questions
+
+Q5 cannot be one of the best questions:
+	Assume it is
+	There is no better question than Q5
+	Q5 has a unique problem that it might get an answer <Q5,A5>
+	RAA, Q5 is not one of the best 
+Q5 must be one of the best questions:
+	Assume it is not
+	Then there is a group of better questions (the best questions). (even if the group is only 1)
+	Realistic principle of informativeness:
+		Other things being equal, it is better to be told a more informative statement than a less informative one.
+	But asking Q5 will get us all the information that asking one of those questions would, AND the fact that it IS one of the best questions.
+	So Q5 is better than any of those questions.
+	RAA, Q5 is one of the best questions.
+
+RAA, we must reject 1, 2 or the reasoning.
+	We can't reject 1.
+	We could maybe reject 2 (appealing to vagueness?)
+
+Second solution: Wasserman and Whitcombe believe that the paradox can be solved by rejecting that there is any particular problem with Q5. (p152) ('... but the first order questions that sider considers carry similar dangers')
+	Specifically: all questions could be answered 'unhelpfully' as they put it.
+		For example, the question 'what is the answer to the problem of world hunger' could be answered 'the course of action I am thinking of now'. This might be true, but it is not HELPFUL.
+		Call this the 'problem of pedantry' (because questions which suffer from it admit of pedantic answers)
+	Q5's problem is that one of it's potential answers is <Q5,A5>
+		Call this the 'problem of self-answering' (because questions like Q5 can be answered with themselves)
+	Thus, Sider's paradox is solved: the first horn of the dilemma doesn't go through, because all questions are alike in their problem, so Q5 is not particularly worse off.
+
+This solution requires that the disadvantage of asking a first order (derived from it's problem of pedantry) be equal to that of asking Q5. 
+Q5 suffers from the problem of pedantry too, but it suffers SEPARATELY (or AS WELL) from the problem of self-answering. 
+For consider Q5*:
+	what is an ordered pair consisting of one of the best questions we could ask, (apart from this one and Q5) and one of its answers?
+	This explicitly rules out the problem of self-answering.
+	But of course this question could still be answered with something unhelpful, like 'the ordered pair I am thinking of now', so the problem of pedantry persists.
+		So Q5* is on a par (in terms of these problems) with other first order questions, but Q5* is better than Q5! (so Q5 must be worse than those other questions)
+
+	Even if the two problems are not entirely distinct (one is a special case of the other perhaps), Q5 at least has more INSTANCES of the same problem.
+
+So Wasserman and Whitcombe do not solve the paradox this way.
+
+First solution:
+	Deny that there are any best questions.
+	Wasserman and Whitcombe briefly support this, but hardly elaborate.
+	Sider writes 'it is hard to believe ... a priori means'
+	
+	I will defend THIS as the way to go, and elaborate on HOW it might actually be acceptable (in the face of the intuitions to the contrary I take Sider to be relying on)
+
+There are no best questions:
+	First, a working definition of best:
+		notice that the way the paradox is set up means that for a question to be among the best (if there are any best questions) just is for there to be no questions better than it.
+		(this allows for multiple best questions, if there are more one question which all have the greatest value (whatever that value is!))
+		: notice that this precludes <best> from being vague, so we can't
+		: appeal to sorites-like solutions (though that might be interesting!)
+		: Might need to back this up a bit?
+	Motivation:
+		We initially assumed that there are some best questions.
+		Given this, (and the fact that <best> not vague) our reasoning leads to a contradiction (that Q5 is and isn't a best question), so we must reject our initial assumption by RAA.
+	Consequences:
+		There is only way this can be true (on our techinal definition of best, above): that there is an infinite sequence of questions, each better than the last.
+		Now it really is true: for any question there will be an infinite number of questions better than it!
+	BUT this does seem very counter-intuitive. Surely there are some best questions?
+		I think that although the reasoning above shows us that in the strictest sense there are no best questions, (only questions which are relatively better or worse than each other), this intuition can be accommodated.
+		I think there is a group of questions which are so good, and of such similar quality (though they DO increase in quality) that they may as well be the best to the casual human observer, concerned with real world pragmatics rather than logic.
+
+	 First, whatever value is being used to measure these questions against each other, it is likely to have a maximum value (take 'benefit', which is often used in the literature. Surely there is a maximum benefit that one question and /or it's  answer could possibly bestow upon humanity? Presumably no question ever reaches this maximum as that would then be the best question, but there IS a point at which it stops)
+	 	As we move up  the series of questions, the questions get better and better with respect to this value.
+		Thus, they get closer and closer to the maximum.
+		Eventually, the difference between the value of the Qn we are at, and the maximum will be extremely small: so small as to be negligible for any human (certainly any human without a special benefit-measuring device).
+		At this point, the questions still improve as we continue up the series, but by such incredibly small amounts (infinitesimally small parts of the already negligible difference) that the difference is negligible.
+		This is the group of 'effectively' best questions.
+
+So the answer to the paradox is to bite the bullet: there simply are no TRULY best questions, but there a group so close that for a normal human questioning the angel, the difference is largely irrelevant.
+
+THE END
