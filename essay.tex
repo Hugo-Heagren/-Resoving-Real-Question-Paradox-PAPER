@@ -1,3 +1,4 @@
+% I need to decide how I'm going to present the references. Using math mode? With subscripts? Same for brackets.
 In Markosian \parencite[]{Markosian_1997}, a paradox is presented.
 An angel appears at a conference of philosophers and offers to answer only one question truthfully.
 After careful consideration the philosophers ask~\ref{Q4}\footnotemark:
@@ -25,7 +26,7 @@ Asking Q4+ will produce the answer A4+, whereas asking~\ref{Q4} will produce <Q4
 The latter is more informative than the former: on top of the answer A4+, it tells us what question Q4+ is \emph{and} that it is the best question to ask.
 Other things being equal, more informative questions are presumably better than less informative ones (call this the \textit{Principle of Informativeness}).
 So asking~\ref{Q4} is better after all than asking Q4+ because it is more informative.
-We can do this for any Q4+ so~\ref{Q4} now appears to be the best question.
+\ref{Q4} will be better than any question~\ref{Q4+}, so~\ref{Q4} now appears to be the best question.
 
 In \parencite[]{Sider1997}, Sider solves the paradox: the presumption that there is a best question has produced a contradiction (that~\ref{Q4} is and is not the best question), so by \textit{reductio} there is no best question.
 Instead of~\ref{Q4}, Sider suggests~\ref{Q5}:
@@ -43,10 +44,15 @@ Assume that~\ref{Q5} is one of the best questions.
 	<\ref{Q5},\ref{A5}>
 	\end{principle}
 
-This answer is as uninformative as~\ref{A4} was, so~\ref{Q5} can't be one of the best questions.
+This answer is as uninformative as~\ref{A4} was.
+Some questions---including first order questions---will only have possible answers better than~\ref{A5}, so must be better than~\ref{Q5}.
+First order questions are not about other questions, but about ordinary matters like world hunger, so any first order question must tell us something more informative than~\ref{A5}.
+So~\ref{Q5} can't be one of the best questions.
+\parencite[4]{Sider1997}
 
 Assume that~\ref{Q5} is not one of the best questions: then there must be a question (call it Q5+) which is better than~\ref{Q5} and will figure in the answer~\ref{A5}.
-Asking Q5+ will produce the answer A5+, whereas asking~\ref{Q5} will produce <Q5+,A5+>.
+Asking Q5+ will produce the answer A5+.
+Now that it is not one of the best questions, asking~\ref{Q5} will produce <Q5+,A5+>.
 The latter is more informative than the former: on top of the answer A5+, it tells us what Q5+ is \emph{and} that it is the one of the best questions to ask.
 Asking Q5+ \emph{just} tells us A5+.
 Then by informativeness,~\ref{Q5} must be better than Q5+ (which is one of the best questions), so~\ref{Q5} must be one of the best questions.
@@ -63,16 +69,17 @@ Sider writes `it is hard to believe that we could be forced to accept such a con
 Instead, Wasserman and Whitcombe offer a different solution, denying that~\ref{Q5} is problematic and thus rejecting the first horn of the dilemma.
 
 They argue that the `danger' with asking~\ref{Q5} is not unique to it, but shared by all (or many) questions. 
-Though the angel could give a useless answer to~\ref{Q5} (like~\ref{A5}), it could just as well give a useless answer to `Who is the author of Huckleberry Finn' (like `the author or Huckelberry Finn' or `my favourite author') or any other question.
+Though the angel could give a useless answer to~\ref{Q5} (like~\ref{A5}), it could just as well give a useless answer to `Who is the author of Huckleberry Finn?' (like `the author or Huckelberry Finn' or `my favourite author') or any other question.
 Call the potential for such a useless answer the \textit{problem of pedantry} because these answers would be pedantic in normal conversation.
-If all (or enough) questions suffer from this problem then although~\ref{Q5} does, it might be no worse than than them and still be one of the best questions.
+If all questions suffer from this problem then although~\ref{Q5} does, it might be no worse than than them and still be one of the best questions.
 
-In so far as all (or very many) questions can be answered in an unhelpful way, clearly~\ref{Q5} is comparable with many other questions.
+In so far as all questions can be answered in an unhelpful way, clearly~\ref{Q5} is comparable with many other questions.
 After all, `my favourite author' and~\ref{A5} \emph{are} both unhelpful answers.
 But Wasserman and Whitcomb's argument requires more: that the disadvantage of asking a first order question (derived from its problem of pedantry) be equal to that of asking Q5.
-Only if this is true would~\ref{Q5} be no worse than any first order question.
 
-The problem with askng Q5 is that one of it's potential answers is <\ref{Q5},\ref{A5}>.
+Only if this is true would~\ref{Q5} be no worse than a first order question.
+
+The problem with Q5 is that one of its potential answers is <\ref{Q5},\ref{A5}>.
 Call this the \textit{problem of self-answering} because here~\ref{Q5} figures in it's own answer.
 
 So Wasserman and Whitcomb's solution requires that the case of the problem of self answering in~\ref{Q5} is no worse than a case of the problem of pedantry in a first order question.
@@ -86,7 +93,7 @@ This is not so.
 	\end{principle}
 
 \ref{Q5*} shows that the two problems (or two instances of the same problem) can come apart.
-If the two problems are distinct, then~\ref{Q5} has at least one problem which most questions do not. (self-answering)
+If the two problems are distinct, then~\ref{Q5} has at least one problem which most questions do not.
 Even if the problem of self-answering is a special case of the problem of pedantry~\ref{Q5*} at least shows that~\ref{Q5} has two different instances of the problem.
 
 Either way the risk of asking~\ref{Q5} is greater than that of asking a first order question, so~\ref{Q5} cannot be one of the best questions and Wasserman and Whitcomb's solution is unsuccessful.
@@ -110,12 +117,12 @@ Human lives---and eventually human history---are finite, as are the means and re
 Although any one question might be more beneficial than another, the questions can't just go on becoming more and more beneficial forever: there is only so much that could possibly be done to benefit humanity.
 The same stands for any other value used to compare questions.
 
-Since there are an infinite number of questions, the difference in value between one question and the next must decrease as the questions become more and more valuable (as the gradient of an curve decreases as it approaches it's asymptote).
+Since there are an infinite number of questions, the difference in value between one question and the next must decrease as the questions become more and more valuable.
 % Taken together, the fact that there is an upper limit on the value a question can provide and that there is an infinite series of such questions means that while the value increases, the difference between the values of consecutive questions must decrease.
 
 For each actual question in the series, there will an infinite number of questions with greater values than it (further on in the series), which take up the `space' between the question and the maximum value.
 With each subsequent question the `space' becomes smaller by some difference in values $d$ (the difference between the value of one question and the next).
-But only a finite multiple of $d$ (and thus a finite number of further questions) can be added on top of any value without hitting the maximum
+But only a finite multiple of $d$ (and thus a finite number of further questions) can be added on top of any value without hitting the maximum.
 No question \emph{can} have the maximum value, because such a question would be truly the best.
 So to accommodate more questions $d$ will have to decrease as the number of questions increases (as the available `space' for questions decreases).
 % The smaller $d$ is, the more questions will fit into the same space, so at some point $d$ must decrease to make room for more (as there are infinite questions).
@@ -143,13 +150,13 @@ So as the series continues through better and better questions, the difference b
 There must be a group of questions so close to the maximum and to each other (as $d$ decreases to be negligibly small) that the difference is immaterial for a human actually asking a question of the angel.
 % At some point $n$ in the series the difference between the value of the question $Q_n$ and the maximum will become negligibly small.
 The precision of human perception of qualities like benefit and informativeness is limited (even if it is very fine in some individuals), and eventually the difference $d$ will become so small that it is not noticed.
-Although the questions above this point do keep on getting better and better, they actual outcomes of asking them are all so close to being on a par that for a pragmatic human (concerned with wellbeing, or the climate, or anything other than philosophy), they may as well all be the best.
+Although the questions above this point do keep on getting better and better, the actual outcomes of asking them are all so close to being on a par that for a human they may as well all be the best.
 
 These questions are the best in two senses.
 They are the \emph{best}, in that for a normal person they are indistinguishable from questions which provide the maximum possible value.
 \emph{They} are the best in that there will be many such questions (indeed, an infinite series of them), so the solution to the original paradox remains intact.
 
-This model answers the real paradox of the question by denying one of it's premises.
+This model answers the real paradox of the question by denying one of its premises.
 However, it also does justice to our intuitions that some questions are better than others, and that there is a question (or group of questions) we \emph{should} ask the angel.
 Moreover, there is an infinite group of these `best' questions, so should the angel ever return, we shall not have to start our search for the next best question all over again.
 Our next question may even be better.
