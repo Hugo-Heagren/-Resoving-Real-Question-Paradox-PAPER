@@ -1,4 +1,5 @@
 % I need to decide how I'm going to present the references. Using math mode? With subscripts? Same for brackets.
+% Fix you citations!! (don't use autocite!, Or fix how it works)
 In Markosian \autocite[]{Markosian_1997}, a paradox is presented.
 An angel appears at a conference of philosophers and offers to answer only one question truthfully.
 After careful consideration the philosophers ask \ref{Q4}:\footnotemark
@@ -28,7 +29,8 @@ Other things being equal, more informative questions are presumably better than 
 So asking \ref{Q4} is better after all than asking Q4+ because it is more informative.
 \ref{Q4} will be better than any question Q4+, so \ref{Q4} now appears to be the best question.
 
-In \autocite[]{Sider1997}, Sider solves the paradox: the presumption that there is a best question has produced a contradiction (that \ref{Q4} is and is not the best question), so by \textit{reductio} there is no best question.
+% FIX THIS!!!!!!!!!!!!
+In \autocite[]{Sider1997}, Sider solves the paradox: the presupposition that there is a best question has produced a contradiction (that \ref{Q4} is and is not the best question), so by \textit{reductio} there is no best question.
 Instead of \ref{Q4}, Sider suggests \ref{Q5}:
 
 	\begin{principle}{Q5}\label{Q5}
@@ -55,7 +57,7 @@ Asking Q5+ will produce the answer A5+.
 Now that it is not one of the best questions, asking \ref{Q5} will produce <Q5+,A5+>.
 The latter is more informative than the former: on top of the answer A5+, it tells us what Q5+ is \emph{and} that it is the one of the best questions to ask.
 Asking Q5+ \emph{just} tells us A5+.
-Then by informativeness, \ref{Q5} must be better than Q5+ (which is one of the best questions), so \ref{Q5} must be one of the best questions.
+Then by the principle of informativeness, \ref{Q5} must be better than Q5+ (which is one of the best questions), so \ref{Q5} must be one of the best questions.
 
 This is Sider's `real paradox of the question': `\ref{Q5} cannot be consistently supposed to be one of the best questions to ask, but neither can it be supposed to not be one of the best questions'.
 
@@ -66,7 +68,7 @@ Wasserman and Whitcomb mention briefly that they support this but do not elabora
 Sider writes `it is hard to believe that we could be forced to accept such a conclusion by a priori means'.
 \autocite[4]{Sider1997}
 
-Instead, Wasserman and Whitcombe offer a different solution, denying that \ref{Q5} is problematic and thus rejecting the first horn of the dilemma.
+Instead, Wasserman and Whitcomb offer a different solution, denying that \ref{Q5} is problematic and thus rejecting the first horn of the dilemma.
 
 They argue that the `danger' with asking \ref{Q5} is not unique to it, but shared by all (or many) questions. 
 Though the angel could give a useless answer to \ref{Q5} (like \ref{A5}), it could just as well give a useless answer to `Who is the author of Huckleberry Finn?' (like `the author or Huckelberry Finn' or `my favourite author') or any other question.
@@ -83,7 +85,6 @@ The problem with Q5 is that one of its potential answers is <\ref{Q5},\ref{A5}>.
 Call this the \textit{problem of self-answering} because here \ref{Q5} figures in it's own answer.
 
 So Wasserman and Whitcomb's solution requires that the case of the problem of self answering in \ref{Q5} is no worse than a case of the problem of pedantry in a first order question.
-(Wasserman and Whitcomb even seem to suggest that the problem of self-answering may just be a certain case of problem of pedantry.)
 
 This is not so.
 \ref{Q5*} could be answered unhelpfully (and so suffers from the problem of pedantry), but cannot receive an answer which includes itself (and \emph{does not} suffer from the problem self-answering)
@@ -109,10 +110,10 @@ So for some question Q to be one of the best questions just is for there to be n
 Notice that this allows for a group of best questions, if they are all of equal value, and there are no other questions of greater value.
 
 Hence, that there are no best questions just is that for every question there is at least one better question.
-Thus there is an infinite series of progressively better questions.
+So there is an infinite series of progressively better questions.
 
 Whatever value is used to measure one question against another, I think it is very likely that it will have an upper limit for humans.
-Take benefit (where Q is better than Q' iff asking Q produces more benefit)
+Take benefit (where Q is better than Q' iff asking Q produces more benefit).
 Human lives---and eventually human history---are finite, as are the means and resources for improving them and the information (and questions for that information) which informs these means.
 Although any one question might be more beneficial than another, the questions can't just go on becoming more and more beneficial forever: there is only so much that could possibly be done to benefit humanity.
 The same stands for any other value used to compare questions.
@@ -121,12 +122,115 @@ Since there are an infinite number of questions, the difference in value between
 
 For each actual question in the series, there will an infinite number of questions with greater values than it (further on in the series), which take up the `space' between the question and the maximum value.
 With each subsequent question the `space' becomes smaller by some difference in values d (the difference between the value of one question and the next).
-But only a finite multiple of d (and thus a finite number of further questions) can be added on top of any value without hitting the maximum.
+But only a finite multiple of d (and so a finite number of further questions) can be added on top of any value without hitting the maximum.
 No question \emph{can} have the maximum value, because such a question would be truly the best.
 So to accommodate more questions d will have to decrease as the number of questions increases (as the available `space' for questions decreases).
 % The smaller d is, the more questions will fit into the same space, so at some point d must decrease to make room for more (as there are infinite questions).
 There are infinite questions, so d will have to decrease infinitely.
 So as the series continues through better and better questions, the difference between the questions must decrease.
+
+Notice that this does not mean d must actually decrease between any two adjacent questions.
+Indeed, d could \emph{increase} from one question to the next, or remain constant.
+The point is that over the course of the series, d must decrease in general.
+
+This is because the range of available values of d becomes smaller and smaller over the series.
+For any value of d at any point, if d increases or stays constant, the range will eventually shrink to exclude that value, so d must decrease below it.
+
+First, the case where d remains constant.
+Say the maximum value of a question is 100, d is 10, and the value of the current question is 20.
+It is possible that for the next seven questions d is constant.
+The next question's value will be 30, then 40, then 50 and so on.
+After seven questions subsequent to the original, the value will be 90.
+If d remains constant the next question will have a value of 100.
+There are infinite questions, so there must be another after the 90-valued question, but no question can have the maximum value, so the difference between the current question and the next must be less than 10.
+This applies to any range of questions with a constant d.
+
+Secondly, the case where d increases.
+Say the last question's value was 20, and d was 10, so the current question's value is 30.
+Suppose that d now increases to 20 and remains constant there (though similar reasoning applies if d then increases again or decreases).
+Again, let the maximum value of a question be 100.
+The next three questions will have values of 50, 70 and 90.
+If d remains constant the next question will have a value of 110.
+There are infinite questions, so there must be another, but no question can have or exceed the maximum value, so the difference between the current question and the next must be less than 10.
+So d must then decrease to below 10 so that the next question's value is less than 100.
+So even if d varies up or down within sections of the series, it must eventually fall below any previous value.
+So over the series, d decreases.
+
+Notice finally that d can never be equal to 0 (even briefly, before increasing again).
+By definition each question in the series is followed by a better question, and the difference in values (how \emph{much} better the second is than the first) between two adjacent questions is d.
+Since no two adjacent questions will be of the same value,\footnotemark\ d can never be equal to 0.
+\footnotetext{
+This is not to say that all questions we could ask must have different values---rather that only questions with different values are part of the series we are considering.
+This is by design: the series' definition above comes out of the notion of `best' used in the literature and the fact that there are no best questions.
+This means that there there must be \emph{a} series of questions such that each is better than the last, but this is not necessarily the series of all questions.
+Indeed, it is very likely that there \emph{are} questions of equal value to each other (e.g.\ pairs like `what is a number greater than 0?' and `what is a number less than 0?'), but for each set of such questions, only one is present in our series.
+}
+So although the value of d may vary, over the series it will tend toward 0.
+
+%%% UNECESSARY {{{1
+% Notice finally that although d may briefly reach 0, it can never decrease permanently to 0.
+% If d were to remain constantly at 0, then there would be a group of questions---better than all the others with lower values---all with the same value.
+% These would be the best questions (in the strict sense above), but the existence of such a group has been ruled out.
+% So d cannot ever reach 0 permanently.
+
+% % zero values of d
+% This response does not hold for d = 0.
+% In that case, the value of any question is no closer to the maximum than that of the last, so we can add any number of 
+
+% Although d decreases continually, and may briefly reach 0, it can never decrease to 0 permenantly (it an not stay at 0 constantly after it reaches 0).
+% If it did, 
+% The series of questions must increase in value as the series progresses, and must be infinite.
+
+% If 
+
+% %% Objection!
+% \newcommand{\Qi}{Q\textsubscript{i}}
+% \newcommand{\Qj}{Q\textsubscript{j}}
+% \newcommand{\Qk}{Q\textsubscript{k}}
+% \newcommand{\dij}{d\textsubscript{ij}}
+% \newcommand{\djk}{d\textsubscript{jk}}
+% Similarly, notice that even if d varies, (not consistently increasing or decreasing between terms) it must decrease `within' this variance as the series progresses.
+% Take three questions \Qi, \Qj\ and \Qk.
+% % The maximum possible value of d at this point in the series will be the maximum value of a question, minus the value of the value of the current question.
+% The maximum possible value of d at this point in the series is the difference between the current question and the maximum possible value for any question.
+% (so if d were at this value, then the next question would have the maximum value.)
+% If d varies over the course of the series, then there are three cases for d\textsubscript{jk}.
+% It could be greater than, equal to, or less than d\textsubscript{ij}---put another way it could increase, not change, or decrease from it's current value.
+% Whichever is true, the maximum possible value of d must decrease.
+
+% If d increases, the next question \Qj will be (significantly) more valuable than the current one, so the difference between its value and the maximum value for any question will be less.
+% d cannot exceed this maximum, so the maximum possible value of d decreases.
+% If d is constant it must eventually decrease, as above, so we can treat this as a case of d decreasing.
+% % If d is constant and non-zero, then the value of the next question \Qj\ will be greater than the current questions \Qi, so the maximum value of \djk\ will be less than that of \dij.
+% % d cannot be constantly 0: if it were then all questions would have equal value, but in fact there is an infinite series of progressively better questions.
+% % So if d is contstant then it's maximum value decreases.
+% If d decreases to a non-zero value, 
+
+% d can never fall below 0.
+% If it did then there would be a question with a lower value than the question immeditely preceding it in the series.
+% But the series just is a series of progressively \emph{better} questions, so this can't be.
+% This fixes the minimum value of d.
+
+% As the maximum value of d decreases over the series and the minimum is fixed, the range of possible values for d becomes smaller and smaller.
+% Over an infinite series then, the value of d must decrease, as smaller and smaller value become unavailable, and d must become yet smaller.
+
+%%%%
+
+%% Objection!
+%% Infinitessimals?
+% It might immediatly be objected that d could always be infinitesimally small.
+% If so, then an infinite number of questions could be added without ever reaching the maximum, and the different between all the questions will be the same.
+% This will only be true on some understandings of infinitesimals.
+% On such understandings, any number of questions could be added on 
+
+%%
+% This can be seen with a physical analogy.
+% You stand a metre away from a mark on the ground.
+% Your initial position represents a zero value, and the mark represents the maximum.
+% You need to take an infinite number of steps (each representing a question) and get as close to the mark as possible (ask a question with the maximum possible benefit).
+% Say your first step is 99 {cm}, now the distance to the mark is 1 {cm}.
+% Since you can't reach the mark
+%%
 
 % Example:
 % Imagine the distance between you and a mark 100 metres is the value of the best question so far realised (so you want to close the gap as much as possible).
@@ -134,6 +238,18 @@ So as the series continues through better and better questions, the difference b
 % Your first steps are a metre each, and you cover the first 99 metres quickly.
 % Now you cannot step a further metre, or you will hit the mark, so you approach the mark instead with steps of 10 cm, until you reach 99.9 metres from the mark.
 % Now you creep forward an millimetre at a time, ever closer...
+% your steps have to get smaller and smaller for you to continue approaching the mark, but never reach it.
+
+% THis example brings out a possible intuitive objection:
+% 
+
+% It may appear that this is not true: what if ALL your steps from the beginning are infinitesimally small.
+% Then you will need an infinite number of these steps to reach the mark (or indeed, anywhere near it), so you will never need to shorten your steps.
+% this is not true, because your steps can't be so infinitesimally small
+% they can be NEGLIBLY small (that is, so small as to not make a difference), but not so small that an infitinite number of them fit into a finite space.
+% your steps each have to be of SOME finite size!
+% ....
+% So this objection fails.
 %%%
 
 % Mathsy explanation of why the difference must decrease.
@@ -145,9 +261,8 @@ So as the series continues through better and better questions, the difference b
 % Then $Q_2 = 2$
 % etc...
 %%%%%%
-
-There must be a group of questions so close to the maximum and to each other (as d decreases to be negligibly small) that the difference is immaterial for a human actually asking a question of the angel.
-% At some point n in the series the difference between the value of the question $Q_n$ and the maximum will become negligibly small.
+%%% }}}1
+As d decreases to be negligibly small, there must be a group of questions so close to the maximum and to each other that the difference is immaterial for a human actually asking a question of the angel.
 The precision of human perception of qualities like benefit and informativeness is limited (even if it is very fine in some individuals), and eventually the difference d will become so small that it is not noticed.
 Although the questions above this point do keep on getting better and better, the actual outcomes of asking them are all so close to being on a par that for a human they may as well all be the best.
 
@@ -155,15 +270,22 @@ These questions are the best in two senses.
 They are the \emph{best}, in that for a normal person they are indistinguishable from questions which provide the maximum possible value.
 \emph{They} are the best in that there will be many such questions (indeed, an infinite series of them), so the solution to the original paradox remains intact.
 
-This notion of best is actually much closer to the notion we employ in everyday use in sentences like `she is one of the best in her class'. (and I believe, closer to the intended sense in Sider's \ref{Q5})
+This sense of `best' is actually much closer to the sense we employ in everyday use in sentences like `she is one of the best in her class'.\footnotemark\ 
 Imagine a runner who places in the top ten in their race in every olympic games from their first entry until their retirement, but never comes first.
 Over their whole career there will always be at least one person better than them, so they are not \emph{the best} in the strict sense above.
-But we would not hesitate to call them \emph{one of the best} runners (at least, one of the best \emph{living} runners).
-This is the notion of best that we most often employ, and it very similar to my solution to the paradox: though the runner is never strictly \emph{the} best, they are still so good that for you or me they may as well be.
-We express this with phrases like `one of the best'.
+But we would not hesitate to call them \emph{one of the best} runners.
+This is a sense of best we often employ, and it is very similar to my solution to the paradox: though the runner is never strictly \emph{the} best, they are still so good that for you or me they may as well be.
+We express this looser sense of `best' with phrases like `one of the best'.
 The same is true of the questions.
+\footnotetext{
+I believe it might also be closer to the sense Sider intended in \ref{Q5}.
+In ordinary usage we seem to use phrases like `one of the best' to mean something like `so good as to be indistinguishable from the best for our purposes'.
+If so (and it this is the sense intended in \ref{Q5}) then \ref{Q5} makes no commitment to there being best questions in the strict sense above, it just asks for a very good question and its answer.
+The final parts of this paper then can be taken as a formalisation of what we mean when we use such phrases.
+If meant (and taken by the angel) in this sense, then a question like \ref{Q5*} might be very promising, though would still suffer from the problem of pedantry.
+}
 
-This model answers the real paradox of the question by denying one of its premises.
-However, it also does justice to our intuitions that some questions are better than others, and that there is a question (or group of questions) we \emph{should} ask the angel.
+This model answers the real paradox of the question by denying the pressuposition that there are any strictly best questions.
+However, it also does justice to our intuitions that some questions are better than others, and that there is a question or group of questions we \emph{should} ask the angel.
 Moreover, there is an infinite group of these `best' questions, so should the angel ever return, we shall not have to start our search for the next best question all over again.
-Our next question may even be better.
+Our next question may even be better in their eyes.
