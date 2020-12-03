@@ -15,8 +15,7 @@
 % Bibliography {{{2
 % Load BibLaTeX and specify all of its options. {{{3
 \usepackage[
-style=verbose-ibid, % Boilerplate style which uses author-year style citations and bib-entries
-autocite=footnote,
+style=authoryear-ibid, % Boilerplate style which uses author-year style citations and bib-entries
 sorting=nyt,           % Sort the bibliography by name, then year, then title
 date=year,             % only use the year for the date in the bibliography
 url=false,             % (except for internet sources) don't include the url in the bibliography
@@ -48,20 +47,7 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 	margin=1in, % 1" margins all round
 }
 \setlength{\parskip}{\baselineskip} % Makes the distance between paragraphs twice the heigth of a standard M
-\setlength{\parindent}{0.5in}       % Don't indent paragraphs
-
-% footnotes {{{3
-\usepackage[%
-ragged,
-]{footmisc}
-
-% chicago style footnotes
-\deffootnote[0.5in]{0em}{1em}{\thefootnotemark.\ }
-
-% blank lines between footnotes (chicago)
-\setlength{\footnotesep}{\baselineskip}
-
-% }}}3
+\setlength{\parindent}{0.5in}       % Indent paragraphs by half an inch
 
 % Theorem style (bold name, number and note, no punctuation) {{{3
 \newtheoremstyle{mytheoremstyle}% name of the style to be used
