@@ -30,8 +30,6 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 \renewcommand\postnotedelim{\addcolon\addspace} % Separate the cited work and date from the page number cited with a colon followed by a space.
 \DeclareFieldFormat{postnote}{#1}               % Suppress the 'p. ' from appearing in the parencites (as is default)
 
-\setlength\bibitemsep{\baselineskip} % Separate entries by a line
-
 % Defines which punctuation marks autopunct (In BibLaTeX) will look for when
 % scanning ahead for punctuaton after citations
 \DeclareAutoPunctuation{.,;:!?}
@@ -48,7 +46,7 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 }
 \linespread{2} % Makes lines double spaced (properly double spaced, not 'word' double spaced)
 \setlength{\parskip}{\baselineskip} % Makes the distance between paragraphs twice the heigth of a standard M
-\setlength{\parindent}{0.5in}       % Indent paragraphs by half an inch
+\setlength{\parindent}{0in}         % Don't indent paragraphs
 
 % Theorem style (bold name, number and note, no punctuation) {{{3
 \newtheoremstyle{mytheoremstyle}% name of the style to be used
@@ -85,10 +83,19 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 \newcustomtheorem{principle}{}
 % }}}2
 
+% Word Count {{{2
+% command to count words in document
+\newcommand\wordcount{
+\immediate\write18{texcount -inc -sum -1 -total format.tex > count.txt}
+\input{count.txt}words}
+
+
+% }}}2
+
 % Attributes {{{2
 \title{On Why Philosophers Can Never Run Out of Questions for Angels: A Solution to the Real Paradox of the Question}
 \author{Hugo Heagren}
-\date{}
+\date{\wordcount}
 % }}}2
 
 % }}}1
@@ -98,5 +105,7 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 % Main essay
 % \section*{\phantom{Essay}}
 \import{./}{text.tex}
-\printbibliography[]
+\printbibliography[ % 
+title=Bibliography % force the Bibliography to be called 'Bibliography'
+] % 
 \end{document}
