@@ -85,11 +85,8 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 
 % Word Count {{{2
 % command to count words in document
-\newcommand\wordcount{
-\immediate\write18{texcount -inc -sum -1 -total format.tex > count.txt}
-\input{count.txt}words}
-
-
+\immediate\write18{texcount -sum -total essay.tex > count.txt}
+\newcommand\wordcount{\input{count.txt}words}
 % }}}2
 
 % Attributes {{{2
