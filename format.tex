@@ -83,24 +83,16 @@ autopunct=true,        % automatically scan ahead for punctuation which conflict
 \newcustomtheorem{principle}{}
 % }}}2
 
-% Word Count {{{2
-% command to count words in document
-\immediate\write18{texcount -sum -total essay.tex > count.txt}
-\newcommand\wordcount{\input{count.txt}words}
-% }}}2
-
 % Attributes {{{2
 \title{On Why Philosophers Can Never Run Out of Questions for Angels: A Solution to the Real Paradox of the Question}
-\author{Hugo Heagren}
-\date{\wordcount}
+\author{}
+\date{}
 % }}}2
 
 % }}}1
 
 \begin{document} 
 \maketitle 
-% Main essay
-% \section*{\phantom{Essay}}
 \import{./}{text.tex}
 \printbibliography[ % 
 title=Bibliography % force the Bibliography to be called 'Bibliography'
